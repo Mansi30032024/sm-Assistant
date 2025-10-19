@@ -41,3 +41,17 @@ function appendMessage(sender, text) {
   chatBox.appendChild(div);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
+function appendTyping() {
+  const div = document.createElement("div");
+  div.id = "typing";
+  div.classList.add("message", "ai-msg");
+
+  const dots = document.createElement("div");
+  dots.classList.add("typing-dots");
+  dots.innerHTML = "<span></span><span></span><span></span>"; // 3 animated dots
+
+  div.appendChild(dots);
+  chatBox.appendChild(div);
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+
