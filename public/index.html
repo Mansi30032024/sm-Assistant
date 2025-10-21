@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CU Smart AI Chat</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusBot</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="chat-container">
-    <header>CU Smart AI Assistant</header>
+    <header>
+      <i class="fa-solid fa-graduation-cap"></i>
+      <h2>CampusBot</h2>
+    </header>
+
     <div id="chat-box" class="chat-box"></div>
-    <footer>
+
+    <div class="input-area">
       <input type="text" id="user-input" placeholder="Type your message..." />
-      <button id="send-btn">Send</button>
-    </footer>
+      <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
